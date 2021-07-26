@@ -1,0 +1,128 @@
+{% extends 'pw/base.html' %}
+{% load static %}
+
+
+{% block main %}
+            <div class="titulo1">
+                <h1>Quizz</h1>
+            </div>
+{% endblock main %}
+{% block footer %}
+        <div class = "center">
+            <div class = "quizz_box">
+                <div class = "quizz_header">
+                    <span>Score: <span id="score">0</span></span>
+                    <span id = "countdown">0</span>
+                </div>
+                <div class = "quizz_body">
+                    <div class = "quizz_set active">
+                        <h4>Quantas competições ganharam a equipa de league of legends T1?</h4>
+                        <div class = "quizz_ans">
+                            <input type = "radio" name = "a1" valid="valid">
+                            <span>19</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a1">
+                        <span>10</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a1">
+                        <span>3</span>
+                            </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a1">
+                        <span>7</span>
+                        </div>
+                    
+                    </div>
+                    <div class = "quizz_set">
+                        <h4>Quantas expansões de World of Warcraft existem?</h4>
+                        <div class = "quizz_ans">
+                            <input type = "radio" name = "a2">
+                            <span>4</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a2">
+                        <span>14</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a2">
+                        <span>1</span>
+                            </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a2" valid="valid">
+                        <span>8</span>
+                        </div>
+                    
+                    </div>
+                    <div class = "quizz_set">
+                        <h4>Quando foi realizado o primeiro torneio da blizzard?</h4>
+                        <div class = "quizz_ans">
+                            <input type = "radio" name = "a3">
+                            <span>1999</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a3" valid="valid">
+                        <span>2007</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a3">
+                        <span>2020</span>
+                            </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a3">
+                        <span>2000</span>
+                        </div>
+                    
+                    </div>
+                    <div class = "quizz_set">
+                        <h4>Quantos campeonatos mundiais foram realizados até hoje?</h4>
+                        <div class = "quizz_ans">
+                            <input type = "radio" name = "a4" valid="valid">
+                            <span>10</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a4">
+                        <span>5</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a4">
+                        <span>20</span>
+                            </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a4">
+                        <span>17</span>
+                        </div>
+                    
+                    </div>
+                    <div class = "quizz_set">
+                        <h4>Quando foi realizada a primeira competição de videojogos e onde?</h4>
+                        <div class = "quizz_ans">
+                            <input type = "radio" name = "a5">
+                            <span>1978 em Standfort</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a5">
+                        <span>1972 em Oxford</span>
+                        </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a5" valid="valid">
+                        <span>1972 em Standfort</span>
+                            </div>
+                        <div class = "quizz_ans">
+                        <input type = "radio" name = "a5">
+                        <span>1978 em Oxford</span>
+                        </div>
+                    
+                    </div>
+                    <div class = "quizz_set">
+                    <h4>Total Score <span id="totalScore">0</span> out of 100</h4>
+                    </div>
+                </div>
+                <div class = "quizz_footer">
+                    <span class = "btn1" id="skip">Skip</span>
+                </div> 
+            </div>    
+        </div>
+{% endblock footer %}
+<script src = "{% static 'js/quizz.js' %}" type = "text/javascript"></script>

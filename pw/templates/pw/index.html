@@ -1,0 +1,28 @@
+{% extends 'pw/base.html' %}
+{% load static %}
+
+{% block main %}
+        <div class="titulo1">
+            <h1 data-text="E-Sports">E-Sports</h1>
+        </div>
+        <div class="image1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m0zWiUGrzBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+{% endblock main %}
+
+{% block footer %}
+    <div class="titulo"><h3><b>Introdução</b></h3></div>
+    <div class="text1">
+        <p>Esports são uma forma de competição que envolve videogames, estes jogos podem ser individuais ou em equipa.</p>
+        <p>A primeira competição de videogames registada ocoreu em 19 de outubro de 1972 na Universidade de Stanford para o jogo Spacewar.</p>
+        <p>Na decada de 2010, os esports eram um fator significativo na industria de videogames, com muitos videogames developers financiando essas competições.</p>
+        <p>Na atualidade os esports são vistos por milhões de pessoas e graças à aderencia das pessoas a esses videojogos muitos jogos tornaram.se populares, tais como:</p>
+        <br>
+        <ul>
+            {% for i in lista %}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+{% endblock footer %}

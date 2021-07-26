@@ -1,0 +1,29 @@
+{% extends 'pw/base.html' %}
+{% load static %}
+
+{% block main %}
+            <div class="titulo1">
+                <h1>About</h1>
+            </div>
+{% endblock main %}
+
+{% block footer %}
+        <div class="text1">
+            <p>Este website tem como objetivo dar a colhecer os e-Sports e levar a que as pessoas fiquem interresadas neles e enventualmente comecem a jogar os jogos também.</p>
+        </div>
+        <br>
+        <div class="image1">
+            <figure>
+                <img src="{% static 'images/Técnicas usadas.png' %}" alt = "Técnicas Usadas">
+                <figcaption><a>Fig.2 -Técnicas usadas no website</a></figcaption>
+            </figure>
+            </div>
+            <br>
+            <div class="image1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mmUZhNOrTHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div class="text1">
+                <p>Esperamos que tenham gostado e para todos o que visitem o website quermos avisar que este será atualizado em breve.</p>
+            </div>
+{% endblock footer %}

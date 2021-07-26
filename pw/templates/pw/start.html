@@ -1,0 +1,24 @@
+{% extends 'pw/base.html' %}
+{% load static %}
+
+
+{% block main %}
+            <div class="titulo1">
+                <h1>Quizz</h1>
+            </div>
+{% endblock main %}
+{% block footer %}
+<div class = "center">
+            <div class = "quizz_box">
+                <div class = "quizz_header">
+                    <span>Score: <span id="score">0</span></span>
+                    <span id = "countdown">0</span>
+                </div>
+                
+                <div class = "quizz_footer" style= text-align:center;>
+                    <a href="quizz" class = "btn1">Start</a>
+                </div> 
+            </div>    
+        </div>
+{% endblock footer %}
+<script src = "{% static 'js/quizz.js' %}" type = "text/javascript"></script>

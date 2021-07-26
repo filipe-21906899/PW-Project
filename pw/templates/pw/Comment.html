@@ -1,0 +1,19 @@
+{% extends 'pw/base.html' %}
+{% load static %}
+
+{% block main %}
+            <div class="titulo1">
+                <h1>Comments</h1>
+            </div>
+{% endblock main %}
+
+{% block footer %}
+           <div class = "contact1">
+            <form method = "POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <button type = "submit" class = "button"> Enviar Comentário </button>
+            </form>
+        </div>
+{% endblock footer %}

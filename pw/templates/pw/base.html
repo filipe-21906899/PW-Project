@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link href="{% static 'style.css' %}" rel="stylesheet">
+        <link href="{% static 'stylenav.css' %}" rel="stylesheet">
+        <link href="{% static 'quizz.css' %}" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name="keywords" content="P1,Programação Web">
+        <meta name="description" content="Website sobre E-sports">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PW P1</title>
+    </head>
+
+    <body class = "page-fade">
+        <header>
+        <nav class = "nav-bar">
+                <ul class="nav-links">
+                    <li><a href="{% url 'index' %}">Introdução</a></li>
+                    <li><a href="{% url 'lol' %}">League of Legends</a></li>
+                    <li><a href="{% url 'wow' %}">World of Warcraft</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'comment' %}">Comments</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'start' %}">Quizz</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+
+        </header>
+
+
+        {% block main %}
+        {% endblock main %}
+
+        {% block footer %}
+        {% endblock footer %}
+
+        <script src = "{% static 'js/menu.js' %}" type = "text/javascript"></script>
+        <script src = "{% static 'js/quizz.js' %}" type = "text/javascript"></script>
+    </body>
+</html>

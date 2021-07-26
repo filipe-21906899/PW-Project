@@ -1,0 +1,28 @@
+{% extends 'pw/base.html' %}
+{% load static %}
+
+{% block main %}
+            <div class="titulo1">
+                <h1>World of Warcraft</h1>
+            </div>
+            <div class="image">
+            <figure>
+                <img src="{% static 'images/WOW-Esports.png' %}" alt = "E-sports">
+                <figcaption><a href="https://esportsobserver.com/blizzard-wow-esports-2020/">Fig.2 -World of Warcraft E-Sports logo</a></figcaption>
+            </figure>
+            </div>
+{% endblock main %}
+
+{% block footer %}
+            <div class="titulo"><h3><b>Informação</b></h3></div>
+            <div class="text1">
+                <p>World of Warcraft (também conhecido pelo acrônimo WoW) é um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004.</p>
+                <p>É considerado o mais popular MMORPG de todo o mundo, tendo chegado a ter 11 milhões de jogadores ativos no ano de 2010. Em 2016, contava com 5 milhões de jogadores regulares.</p>
+                <p>Este jogo conta com um total de 8 expansões sendo estas "The Burning Crusade", "Wrath of the Lich King", "Cataclysm", "Mists of Pandaria", "Warlords of Draenor", "Legion", "Battle for Azeroth" e a mais recente "Shadowlands".</p>
+                <p>Em 2007 a Blizzard realizou o seu primeiro torneio, na anual fan expo Blizzcon, no formato de 3vs3 arena.</p>
+                <p>Com o passar do tempo a Blizzard decidiu esperimentar um novo tipo de torneio para o seu jogo o Mythic dungeon internacional ou MDI.</p>
+            </div>
+            <div class="image1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/14lKw5FVBd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+{% endblock footer %}
